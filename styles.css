@@ -116,7 +116,12 @@ html,body
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    overflow: auto;
     padding: 50px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
 }
 
 .container-features-card{
@@ -131,6 +136,12 @@ html,body
     justify-content: space-evenly;
     text-align: center;
     font-size: 12px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 }
 
 .container-features-card-header{
@@ -252,13 +263,12 @@ html,body
 .container-resume{
     height: 100%;
     background-color: rgb(33, 48, 71);
-    padding: 50px;
     display: flex;
     flex-direction: column;
 }
 
 .kanox-resume{
-    padding: 20px;
+    padding: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -323,6 +333,7 @@ html,body
     border-radius: 1px;
     border: 1px solid silver;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 .profile-links{
@@ -396,6 +407,7 @@ p{
 
 .news-item{
     width: 180px;
+    min-height: 500px;
     text-align: center;
     color: whitesmoke;
     border: 1px solid silver;
@@ -414,9 +426,7 @@ p{
 
 .instagram-image{
     height: 70px;
-    width: 70px;
     width: 30%;
-    margin-right: 10px;
     margin-bottom: 10px;
 }
 
@@ -426,8 +436,9 @@ p{
 }
 
 .instagram-images{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .container-comp-info{
@@ -545,7 +556,11 @@ p{
 }
 
 
-@media (max-width: 900px) {
+@media (min-width:581px) and (max-width: 1055px) {
+    .instagram-images{
+        display: flex;
+        justify-content: space-evenly;
+    }
     .container-socials{
         display: flex;
         flex-direction: column;
@@ -594,10 +609,22 @@ p{
         align-items: center;
     }
     .container-features-content{
+        -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
         margin-bottom: 50px;
     }
     .container-features-card{
-        margin-bottom: 50px;
+        display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+        
+        width: 40%;
     }
     .container-work-content{
         display: flex;
@@ -660,7 +687,11 @@ p{
 }
     
 
-@media (max-width: 414px) {
+
+@media (max-width: 580px) {
+    .container-socials-content{
+        width: 100%;
+    }
     .profile-card-container{
         padding: 10px;
     }
@@ -676,7 +707,7 @@ p{
         display: none;
     }
     .container-features-card{
-        width: 100%;
+        width: 70%;
     }
     .container-features-content{
         margin-bottom: 50px;
@@ -695,4 +726,104 @@ p{
         height: 250px;
         width: 250px;
     }   
+    .news-item{
+        width: 180px;
+        margin-bottom: 100px;
+    }
+
+
+
+
+    .instagram-images{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container-socials{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar-logo{
+        width: 100%;
+    }
+    .navbar-toggle{
+        width: 100%;
+    }
+    .navbar-links{
+        width: 100%;
+    }
+    .img-overlay2{
+        width: 1000px;
+    }
+    .container-landing{
+        flex-direction: column-reverse;
+        background-color: lightyellow;
+        justify-content: space-evenly;
+    }
+    .h1-slategray{
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .h2-slategray{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .container-landing-text{
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    .navbar-toggle{
+        width: 100%;
+        display: block;
+        background-color: hotpink;
+        border-radius: 5px;
+    }
+    .navbar-links{
+        width: 100%;
+    }
+    .img-overlay1, .img-overlay2{
+        display: none;
+    }
+    .container-socials-content{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .img-demo1{
+        margin-bottom: 50px;
+    }
+    .container-overlap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+    .container-work-content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .container-work-content-rev{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .container-work-content-desc{
+        width: 50%;
+    }
 }
