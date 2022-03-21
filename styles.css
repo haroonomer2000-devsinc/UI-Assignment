@@ -221,6 +221,44 @@ html,body
     margin-bottom: 50px;
 }
 
+.container-overlapping{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img1-overlap{
+    height: 50%;
+    width: 60%;
+}
+
+.img2-overlap{
+    height: 100%;
+    width: 60%;
+}
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    margin-top: 50px;
+}
+
+.image-stack__item--bottom {
+    grid-column: 1 / span 8;
+    grid-row: 1; /* must be on the same row as the other image*/
+    padding-top: 20%; /* this pushes the image down, and keeps it proportional as it resizes*/
+    z-index: 0; /* make this image render on top of the bottom*/
+}
+
+.image-stack__item--top {
+    grid-column: 4 / -1;
+    grid-row: 1; /* make this image be on the same row*/
+    z-index: 1;
+}
+    
+
 .container-work-content{
     display: flex;
     justify-content: space-evenly;
@@ -684,11 +722,63 @@ p{
         justify-content: space-evenly;
         align-items: center;
     }
+    .container-overlapping{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .img1-overlap{
+        height: 50%;
+        width: 100%;
+    }
+    .img2-overlap{
+        height: 100%;
+        width: 70%;
+    }
+    .image-stack__item--bottom {
+        grid-column: 1 / span 10;
+        grid-row: 1; /* must be on the same row as the other image*/
+        padding-top: 20%; /* this pushes the image down, and keeps it proportional as it resizes*/
+        z-index: 0; /* make this image render on top of the bottom*/
+    }
+    
+    .image-stack__item--top {
+        grid-column: 6 / -1;
+        grid-row: 1; /* make this image be on the same row*/
+        z-index: 1;
+    }    
 }
     
 
 
 @media (max-width: 580px) {
+    .img1-overlap{
+        height: 50%;
+        width: 100%;
+    }
+    .img2-overlap{
+        height: 100%;
+        width: 70%;
+    }
+    .image-stack__item--bottom {
+        grid-column: 1 / span 10;
+        grid-row: 1; /* must be on the same row as the other image*/
+        padding-top: 20%; /* this pushes the image down, and keeps it proportional as it resizes*/
+        z-index: 0; /* make this image render on top of the bottom*/
+    }
+    
+    .image-stack__item--top {
+        grid-column: 6 / -1;
+        grid-row: 1; /* make this image be on the same row*/
+        z-index: 1;
+    }    
+    .container-overlapping{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
     .container-socials-content{
         width: 100%;
     }
