@@ -280,7 +280,7 @@ html,body{
 }
 
 .kanox-resume{
-    padding: 100px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -327,6 +327,7 @@ html,body{
 }
 
 .profile-card-container{
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -744,9 +745,6 @@ p{
     }
     .container-socials-content{
         width: 100%;
-    }
-    .profile-card-container{
-        padding: 10px;
     }
     .container-navigation{
         background-color: lightyellow;
