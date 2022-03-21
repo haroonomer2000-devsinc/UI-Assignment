@@ -768,6 +768,9 @@ p{
     .container-features-card{
         margin-bottom: 50px;
     }
+    .container-features-card:last-child{
+        margin-bottom: 0px;
+    }
     .profile-card-container{
         background-color: rgb(33, 48, 71);
     }
