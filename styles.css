@@ -5,8 +5,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-html,body
-{
+html,body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -153,23 +152,6 @@ html,body
     color: lightsteelblue;
 }
 
-.img-1{
-    height:300px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 100px;
-    position:relative; /* and this has to be relative */
-    width:400px;
-}
-
-.img-2{
-    height:200px;
-    left:450px; /* play around with this */
-    position:absolute;
-    width:300px;
-    margin-top: 20px;
-}
-
 .fa-mobile-screen-button{
     background-color: lightslategray;
     border: 1px solid silver;
@@ -247,9 +229,9 @@ html,body
 
 .image-stack__item--bottom {
     grid-column: 1 / span 8;
-    grid-row: 1; /* must be on the same row as the other image*/
+    grid-row: 1; 
     padding-top: 20%; /* this pushes the image down, and keeps it proportional as it resizes*/
-    z-index: 0; /* make this image render on top of the bottom*/
+    z-index: 0;
 }
 
 .image-stack__item--top {
@@ -258,7 +240,6 @@ html,body
     z-index: 1;
 }
     
-
 .container-work-content{
     display: flex;
     justify-content: space-evenly;
@@ -296,13 +277,6 @@ html,body
 
 .creative-work-learnmore:hover{
     text-decoration: underline;
-}
-
-.container-resume{
-    height: 100%;
-    background-color: rgb(33, 48, 71);
-    display: flex;
-    flex-direction: column;
 }
 
 .kanox-resume{
@@ -525,7 +499,6 @@ p{
     margin-bottom: 20px;
 }
 
-
 .newsletter-email{
     margin-bottom: 20px;
 }
@@ -648,20 +621,19 @@ p{
     }
     .container-features-content{
         -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
         margin-bottom: 50px;
     }
     .container-features-card{
         display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    margin-bottom: 30px;
-    margin-top: 30px;
-        
+        display: -moz-box;
+        display: -webkit-flexbox;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        margin-bottom: 30px;
+        margin-top: 30px;        
         width: 40%;
     }
     .container-work-content{
@@ -679,16 +651,9 @@ p{
     .container-work-content-desc{
         width: 50%;
     }
-    .container7{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-bottom: 100px;
-    }
     .navbar ul{
         flex-wrap: wrap;
         width: 100%;
-
     }
     .navbar-toggle{
         width: 100%;
@@ -749,8 +714,6 @@ p{
         z-index: 1;
     }    
 }
-    
-
 
 @media (max-width: 580px) {
     .img1-overlap{
@@ -820,10 +783,6 @@ p{
         width: 180px;
         margin-bottom: 100px;
     }
-
-
-
-
     .instagram-images{
         display: flex;
         justify-content: space-evenly;
@@ -898,9 +857,6 @@ p{
         justify-content: space-evenly;
         align-items: center;
     }
-
-
-
     .container-work-content{
         display: flex;
         flex-direction: column-reverse;
