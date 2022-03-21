@@ -592,15 +592,6 @@ p{
     .navbar-logo{
         width: 100%;
     }
-    .navbar-toggle{
-        width: 100%;
-    }
-    .navbar-links{
-        width: 100%;
-    }
-    .img-overlay2{
-        width: 1000px;
-    }
     .container-landing{
         flex-direction: column-reverse;
         background-color: lightyellow;
@@ -653,17 +644,16 @@ p{
         width: 50%;
     }
     .navbar ul{
-        flex-wrap: wrap;
-        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .navbar-toggle{
-        width: 100%;
         display: block;
         background-color: hotpink;
         border-radius: 5px;
     }
     .navbar-links{
-        width: 100%;
+        display: none;
     }
     .img-overlay1, .img-overlay2{
         display: none;
@@ -794,18 +784,12 @@ p{
         justify-content: space-evenly;
         align-items: center;
     }
-    .navbar{
-        width: 100%;
-    }
+   
     .navbar-logo{
-        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
-    .navbar-toggle{
-        width: 100%;
-    }
-    .navbar-links{
-        width: 100%;
-    }
+   
     .img-overlay2{
         width: 1000px;
     }
@@ -829,18 +813,16 @@ p{
         align-items: center;
     }
     .navbar ul{
-        flex-wrap: wrap;
-        width: 100%;
-
+        display: flex;
+        justify-content: center;
     }
     .navbar-toggle{
-        width: 100%;
         display: block;
         background-color: hotpink;
         border-radius: 5px;
     }
     .navbar-links{
-        width: 100%;
+        display: none;
     }
     .img-overlay1, .img-overlay2{
         display: none;
